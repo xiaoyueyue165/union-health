@@ -1,0 +1,268 @@
+.plusCenter {
+  position: relative;
+  height: 100%;
+  background: #f5f5f5;
+}
+
+.plusCenter .userBox {
+  position: relative;
+  width: 100%;
+  height: 16.375rem;
+  background: url("../assets/plusCenter/user_bg.png");
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5rem 1.5625rem 6.375rem;
+}
+
+.plusCenter .userBox .avatorBox {
+  float: left;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.plusCenter .userBox .avatorBox img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.plusCenter .userBox .details {
+  float: left;
+  margin-left: 1.25rem;
+}
+
+.plusCenter .userBox .details .phone {
+  height: 1.5625rem;
+  font-size: 1.5625rem;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: white;
+  line-height: 1.5625rem;
+}
+
+.plusCenter .userBox .details .gradesBox {
+  height: 5rem;
+}
+
+.plusCenter .userBox .details .gradesBox .vip {
+  margin-right: 0.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10.5625rem;
+  height: 2.25rem;
+  background: #5ab6f6;
+  border: 1px solid rgba(233, 233, 233, 0.5);
+  border-radius: 1.125rem;
+  font-size: 1.5625rem;
+  font-family: SourceHanSansCN-Medium;
+  font-weight: 500;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 1.0625rem;
+  line-height: 2.25rem;
+}
+
+.plusCenter .userBox .details .gradesBox .vip img {
+  width: 1.75rem;
+  height: 1.4375rem;
+  margin-right: 0.5rem;
+}
+
+.plusCenter .userBox .details .gradesBox .normal {
+  width: 9.0625rem;
+  height: 2.25rem;
+  background: #5ab6f6;
+  border: 1px solid rgba(233, 233, 233, 0.5);
+  border-radius: 1.125rem;
+  font-size: 1.5625rem;
+  font-family: SourceHanSansCN-Medium;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  line-height: 2.25rem;
+}
+
+.plusCenter .userBox .editBtn {
+  position: absolute;
+  right: 1.5625rem;
+  top: 4.8125rem;
+  width: 1.9375rem;
+  height: 1.9375rem;
+}
+
+.plusCenter .threeMsg {
+  position: absolute;
+  left: 1.5625rem;
+  top: 13.375rem;
+  width: 43.75rem;
+  height: 9.8125rem;
+  background: white;
+  border-radius: 1.25rem;
+}
+
+.plusCenter .threeMsg .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  padding: 2.625rem 0 2.5rem;
+}
+
+.plusCenter .threeMsg .item .num {
+  height: 1.8125rem;
+  font-size: 1.8125rem;
+  font-family: SourceHanSansCN-Bold;
+  font-weight: bold;
+  color: #4d5470;
+}
+
+.plusCenter .threeMsg .item .name {
+  height: 1.5625rem;
+  font-size: 1.625rem;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #545969;
+}
+
+.plusCenter .orderStateBox {
+  width: 43.75rem;
+  height: 14.375rem;
+  background: white;
+  border-radius: 1.25rem;
+  margin: 0 auto;
+  margin-top: 8.0625rem;
+}
+
+.plusCenter .orderStateBox .titleBox {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 1.9375rem 0 2.0625rem;
+  height: 4.9375rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.plusCenter .orderStateBox .titleBox .title {
+  height: 1.6875rem;
+  font-size: 1.6875rem;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #333333;
+}
+
+.plusCenter .orderStateBox .titleBox .more {
+  height: 1.5625rem;
+  font-size: 1.5625rem;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #666666;
+}
+
+.plusCenter .orderStateBox .stateBox {
+  height: 9.375rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1.6875rem 0 1.6875;
+}
+
+.plusCenter .orderStateBox .stateBox .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.plusCenter .orderStateBox .stateBox .item img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.plusCenter .orderStateBox .stateBox .item img .name {
+  height: 1.5625rem;
+  font-size: 1.5625rem;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #666666;
+}
+
+.plusCenter .actionsBox {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 43.75rem;
+  height: 12rem;
+  background: white;
+  border-radius: 1.25rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2.5rem 0 2.75rem;
+}
+
+.plusCenter .actionsBox .action_item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.plusCenter .actionsBox .action_item img {
+  width: 3.875rem;
+  height: 3.875rem;
+}
+
+.plusCenter .actionsBox .action_item .name {
+  height: 1.5rem;
+  font-size: 1.5rem;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #666666;
+}
+
+.plusCenter .btn_return {
+  margin: 15.625rem auto 0;
+  width: 43.6875rem;
+  height: 5.625rem;
+  background: #2eaefd;
+  border-radius: 0.375rem;
+  font-size: 1.625rem;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  line-height: 5.625rem;
+}
+
+.plusCenter .com_nav {
+  position: fixed;
+  bottom: 0;
+  width: 46.875rem;
+  height: 6.125rem;
+  background: white;
+  -webkit-box-shadow: 0px -1px 0px 0px #d9d9d9;
+          box-shadow: 0px -1px 0px 0px #d9d9d9;
+}
+
+.plusCenter .com_nav .nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.plusCenter .com_nav .nav img {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.plusCenter .com_nav .nav .nav_name {
+  height: 1.375rem;
+  font-size: 1.375rem;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999999;
+}
+/*# sourceMappingURL=plusCenter.css.map */

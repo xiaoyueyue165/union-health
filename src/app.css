@@ -4,7 +4,10 @@
   flex-direction: column;
   box-sizing: border-box;
 }
-
+html,
+body {
+  height: 100%;
+}
 .borderBox {
   box-sizing: border-box;
 }
