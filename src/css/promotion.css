@@ -1,0 +1,75 @@
+.promotion {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: 100% 100% url("../assets/promotion/bg.png");
+}
+
+.promotion .avator {
+  margin: 0 auto;
+  position: relative;
+  top: 5.4375rem;
+  width: 12.4375rem;
+  height: 12.4375rem;
+  border-radius: 50%;
+}
+
+.promotion .avator img {
+  width: 12.4375rem;
+  height: 12.4375rem;
+}
+
+.promotion .account {
+  position: absolute;
+  top: 21.625rem;
+  height: 4.6875rem;
+  width: 100%;
+}
+
+.promotion .account .name {
+  height: 1.875rem;
+  font-size: 1.875rem;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #fffefe;
+}
+
+.promotion .account .number {
+  height: 1.625rem;
+  font-size: 1.625rem;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: white;
+}
+
+.promotion .wxCodeBox {
+  position: absolute;
+  left: 13.3125rem;
+  top: 32.8125rem;
+  width: 20.3125rem;
+  height: 19.1875rem;
+  background: url("../assets/promotion/wxCode_bg.png");
+}
+
+.promotion .wxCodeBox img {
+  width: 16rem;
+  height: 16.0625rem;
+}
+
+.promotion .registerBtn {
+  position: absolute;
+  left: 13.8125rem;
+  top: 57.375rem;
+  width: 19.125rem;
+  height: 4.9375rem;
+  background: white;
+  border: 1px solid #e3e3e3;
+  border-radius: 2.5rem;
+  font-size: 1.9375rem;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #176cf9;
+  text-align: center;
+  line-height: 4.9375rem;
+}
+/*# sourceMappingURL=promotion.css.map */

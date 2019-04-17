@@ -1,0 +1,66 @@
+.promotion {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: 100% 100% url("../assets/promotion/bg.png");
+  .avator {
+    margin: 0 auto;
+    position: relative;
+    top: 5.4375rem;
+    width: 12.4375rem;
+    height: 12.4375rem;
+    border-radius: 50%;
+    img {
+      width: 12.4375rem;
+      height: 12.4375rem;
+    }
+  }
+  .account {
+    position: absolute;
+    top: 21.625rem;
+    height: 4.6875rem;
+    width: 100%;
+    .name {
+      height: 1.875rem;
+      font-size: 1.875rem;
+      font-family: PingFang-SC-Medium;
+      font-weight: 500;
+      color: rgba(255, 254, 254, 1);
+    }
+    .number {
+      height: 1.625rem;
+      font-size: 1.625rem;
+      font-family: PingFang-SC-Medium;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+  .wxCodeBox {
+    position: absolute;
+    left: 13.3125rem;
+    top: 32.8125rem;
+    width: 20.3125rem;
+    height: 19.1875rem;
+    background: url("../assets/promotion/wxCode_bg.png");
+    img {
+      width: 16rem;
+      height: 16.0625rem;
+    }
+  }
+  .registerBtn {
+    position: absolute;
+    left: 13.8125rem;
+    top: 57.375rem;
+    width: 19.125rem;
+    height: 4.9375rem;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(227, 227, 227, 1);
+    border-radius: 2.5rem;
+    font-size: 1.9375rem;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
+    color: rgba(23, 108, 249, 1);
+    text-align: center;
+    line-height: 4.9375rem;
+  }
+}
