@@ -1,8 +1,8 @@
 /*! normalize.css v8.0.1 https://cdn.bootcss.com/normalize/8.0.1/normalize.css | MIT License | github.com/necolas/normalize.css */
 body {
   margin: 0;
-  font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-    "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
+  font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB",
+    "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
   font-size: 14px;
   line-height: 1.42858;
   color: #333;
@@ -39,3 +39,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+i {
+  font-style: normal;
+}
+strong {
+  font-weight: normal;
+}
+input {
+  outline: none;
+  padding: 0;
+  border: none;
+}
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+/* i,del,strong */

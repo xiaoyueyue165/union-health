@@ -1,0 +1,196 @@
+#shopCenter {
+  height: 100%;
+  background: #f5f5f5;
+  .searchBar {
+    box-sizing: border-box;
+    padding: 0 4.75rem 0 1.5rem;
+    width: 100%;
+    height: 5.5rem;
+    background: rgba(100, 170, 233, 1);
+    .logo {
+      width: 11.375rem;
+      height: 3.0625rem;
+      background: #fff;
+    }
+    .input {
+      width: 23.125rem;
+      margin-left: 1.4375rem;
+      input {
+        box-sizing: border-box;
+        padding-left: 1.25rem;
+        width: 23.125rem;
+        height: 3.75rem;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 8px;
+        line-height: 3.75rem;
+        font-size: 1.75rem;
+        font-family: MicrosoftYaHei;
+        font-weight: 400;
+        color: #333;
+      }
+    }
+    .searchBtn {
+      width: 5.875rem;
+      height: 100%;
+      color: #fff;
+      font-size: 1.75rem;
+    }
+  }
+  .swiperWrap {
+    width: 100%;
+    height: 18.75rem;
+    background: pink;
+  }
+  .shopListBox {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1.25rem;
+    background: #f5f5f5;
+    .group {
+      .titleBox {
+        position: relative;
+        height: 9.25rem;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2.625rem 1.25rem;
+        .title {
+          height: 4rem;
+          .name {
+            height: 1.875rem;
+            font-size: 1.875rem;
+            font-family: MicrosoftYaHei;
+            font-weight: 400;
+            color: rgba(51, 51, 51, 1);
+            line-height: 1.875rem;
+          }
+          .en {
+            height: 1.1875rem;
+            font-size: 1.1875rem;
+            font-family: MicrosoftYaHei;
+            font-weight: 400;
+            color: rgba(153, 153, 153, 1);
+            line-height: 1.1875rem;
+          }
+        }
+        .more {
+          position: absolute;
+          top: 3.75rem;
+          right: 0;
+          display: flex;
+          height: 1.5625rem;
+          font-size: 1.5625rem;
+          font-family: MicrosoftYaHei;
+          font-weight: 400;
+          color: rgba(51, 51, 51, 1);
+          line-height: 1.875rem;
+          .bg {
+            margin-left: 0.8125rem;
+            width: 2.125rem;
+            height: 2.125rem;
+            background: rgba(100, 189, 249, 1);
+            border-radius: 50%;
+            img {
+              width: 0.625rem;
+              height: 1.0625rem;
+            }
+          }
+        }
+      }
+      .shopList {
+        .item {
+          width: 21.5625rem;
+          height: 33.0625rem;
+          background: rgba(255, 255, 255, 1);
+          border-radius: 0.25rem;
+          margin-bottom: 1.25rem;
+          .mainImg {
+            width: 21.5625rem;
+            height: 20.875rem;
+          }
+          .introduction {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0.875rem 1.875rem 1.6875rem 1.5rem;
+            .name {
+              width: 18.1875rem;
+              height: 4.1875rem;
+              font-size: 1.75rem;
+              font-family: PingFang-SC-Medium;
+              font-weight: 500;
+              color: rgba(51, 51, 51, 1);
+              line-height: auto;
+            }
+            .sellStateBox {
+              height: 1.6875rem;
+              margin-top: 1.3125rem;
+              margin-bottom: 1rem;
+              .subTitle {
+                height: 1.6875rem;
+                background: rgba(255, 255, 255, 1);
+                border-radius: 4px;
+                border: 1px solid rgba(252, 88, 0, 1);
+                font-size: 1.125rem;
+                padding: 0.25rem 0.25rem 0.3125rem 0.375rem;
+                font-family: PingFang-SC-Regular;
+                font-weight: 400;
+                text-align: center;
+                color: rgba(252, 88, 0, 1);
+                margin-right: 0.875rem;
+              }
+              .sell {
+                padding: 0.25rem 0.5rem 0.3125rem 0.4375rem;
+                width: auto;
+                height: 1.6875rem;
+                background: rgba(254, 233, 222, 1);
+                border-radius: 0.25rem;
+                font-size: 1.125rem;
+                font-family: PingFang-SC-Regular;
+                font-weight: 400;
+                color: rgba(252, 88, 0, 1);
+              }
+            }
+            .priceBox {
+              height: 1.5rem;
+              font-size: 2rem;
+              font-family: PingFang-SC-Bold;
+              font-weight: bold;
+              color: rgba(252, 88, 0, 1);
+              .priceCode {
+                font-style: normal;
+                font-size: 1.5rem;
+              }
+              .withoutHignPrice {
+                margin-left: 0.9375rem;
+                height: 1.0625rem;
+                font-size: 1.0625rem;
+                font-family: PingFang-SC-Regular;
+                font-weight: 400;
+                text-decoration: line-through;
+                color: rgba(102, 102, 102, 1);
+                line-height: 1.0625rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .fixedMenu {
+    position: fixed;
+    top: 43.75rem;
+    right: 0;
+    width: 4.3125rem;
+    height: 18rem;
+    z-index: 10000;
+    .item {
+      width: 4.3125rem;
+      height: 4.3125rem;
+      background: rgba(123, 191, 251, 1);
+      margin-bottom: 0.25rem;
+      img {
+        width: 2.3125rem;
+        height: 2.25rem;
+      }
+    }
+  }
+}

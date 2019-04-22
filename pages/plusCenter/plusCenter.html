@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>会员中心</title>
     <link
       rel="stylesheet"
       href="https://cdn.bootcss.com/normalize/8.0.1/normalize.css "
@@ -102,14 +102,56 @@
       </div>
       <!-- 安全退出 -->
       <div class="btn_return">安全退出</div>
+      <!-- 签到 -->
+      <div class="mask" style="display:none;"></div>
+      <div class="checkIn" style="display:none;">
+        <div class="header columnBetween">
+          <div class="name">签到成功</div>
+          <div class="introduce">连续签到可获得更多积分哦</div>
+          <img class="close" src="../../assets/icon/close_checkIn.png" alt="" />
+        </div>
+        <div class="content">
+          <div class="checkInStateBox oneLineBetween">
+            <div class="item columnBetween">
+              <div class="action checkIned">+1</div>
+              <div class="state">1天</div>
+            </div>
+            <div class="item columnBetween">
+              <div class="action">+2</div>
+              <div class="state">2天</div>
+            </div>
+            <div class="item columnBetween">
+              <div class="action">+3</div>
+              <div class="state">3天</div>
+            </div>
+            <div class="item columnBetween">
+              <div class="action">+4</div>
+              <div class="state">4天</div>
+            </div>
+            <div class="item columnBetween">
+              <div class="action">+5</div>
+              <div class="state">5天</div>
+            </div>
+          </div>
+          <div class="rules">
+            1. 签到规则说明<br />
+            （1）注册普通会员积1000分原始积分；<br />
+            （2）发话题贴积10分，设成优秀原创话题可另获20分的积分；<br />
+            （3）会员单笔消费所得积分 = 消费金额
+          </div>
+        </div>
+      </div>
       <!-- 底部导航 -->
       <div class="com_nav oneLineBetween">
-        <div class="nav columnBetween">
+        <div
+          class="nav columnBetween"
+          onclick="openUrl('../shopCenter/shopCenter.html')"
+        >
           <img src="../../assets/icon/tabs/tab1.png" alt="" />
           <div class="nav_name">商城中心</div>
         </div>
         <div class="nav columnBetween">
-          <img src="../../assets/icon/tabs/tab2.png" alt="" />
+          <img src="../../assets/icon/tabs/tab2_act.png" alt="" />
           <div class="nav_name">会员中心</div>
         </div>
         <div
@@ -122,4 +164,14 @@
       </div>
     </div>
   </body>
+  <script>
+    on($$(".action_item")[0], "click", function() {
+      $(".checkIn").style.display = "block";
+      $(".mask").style.display = "block";
+    });
+    on($(".close"), "click", function() {
+      $(".checkIn").style.display = "none";
+      $(".mask").style.display = "none";
+    });
+  </script>
 </html>

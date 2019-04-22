@@ -173,3 +173,9 @@
   justify-content: space-between;
   align-items: flex-end;
 }
+.x-normal {
+  align-items: normal;
+}
+.flex {
+  display: flex;
+}
