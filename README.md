@@ -6,7 +6,7 @@
 
 - Live Sass Compiler
 
-将 `src/sass/` 目录下的 `Scss` 编译至 `src/css`目录
+将 `.scss` 文件统一编译至根目录的 `css`文件夹
 
 ```js
 "liveSassCompile.settings.formats": [
