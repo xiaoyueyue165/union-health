@@ -8,7 +8,7 @@
 
 将 `src/sass/` 目录下的 `Scss` 编译至 `src/css`目录
 
-```json
+```js
 "liveSassCompile.settings.formats": [
     // You can add more
     {
