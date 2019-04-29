@@ -1,5 +1,11 @@
+html {
+  display: flex;
+  flex: 1;
+  height: auto;
+  background: #f5f5f5;
+}
 .orderDetail {
-  height: 100%;
+  height: auto;
   background: #f5f5f5;
   .product {
     position: relative;
@@ -79,11 +85,66 @@
       }
     }
   }
-  .optional {
-    box-sizing: border-box;
-    padding: 2.5rem 1.75rem 2.5rem 1.5625rem;
+  .invoice {
     position: relative;
     top: 3.75rem;
+    height: auto;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 1.5625rem;
+    .isOpen {
+      height: 5.5rem;
+      font-size: 1.6875rem;
+    }
+    #invoicebox {
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5.5rem;
+        margin-bottom: 1.375rem;
+      }
+      input:not([type="radio"]) {
+        box-sizing: border-box;
+        padding-left: 1.5rem;
+        width: 33.5rem;
+        height: 5.5rem;
+        border: 1px solid #dbdbdb;
+        border-radius: 0.625rem;
+      }
+    }
+    .selectBox {
+      display: flex;
+      width: 9rem;
+      font-size: 1.6875rem;
+      label {
+        height: 5.5rem;
+        width: 5rem;
+        span {
+          white-space: nowrap;
+        }
+        &:nth-child(1) {
+          margin-right: 2rem;
+        }
+        input {
+          padding-left: 1.875rem;
+          font-size: 1.6875rem;
+        }
+      }
+    }
+    .typeSelect {
+      width: 14rem;
+      label {
+        width: 7rem;
+      }
+    }
+  }
+  .optional {
+    position: relative;
+    top: 5rem;
+    margin-bottom: 10rem;
+    box-sizing: border-box;
+    padding: 2.5rem 1.75rem 2.5rem 1.5625rem;
     width: 100%;
     height: 11.3125rem;
     background: rgba(255, 255, 255, 1);
@@ -146,6 +207,9 @@
           font-size: 1.5rem;
         }
       }
+    }
+    .jianPriceBox {
+      margin-left: 1.25rem;
     }
     .rightBtn {
       width: 14.6875rem;

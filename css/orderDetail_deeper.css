@@ -166,6 +166,10 @@
   font-size: 1.5rem;
 }
 
+.orderDetail_deeper .fixedPrice .jianPriceBox {
+  margin-left: 1.25rem;
+}
+
 .orderDetail_deeper .fixedPrice .rightBtn {
   width: 14.6875rem;
   height: 6.125rem;

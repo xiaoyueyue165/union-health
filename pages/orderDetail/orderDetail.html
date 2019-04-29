@@ -1,228 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>订单详情</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.bootcss.com/normalize/8.0.1/normalize.css "
-    />
-    <link rel="stylesheet" href="../../styles/reset.css" />
-    <link rel="stylesheet" href="../../css/orderDetail.css" />
-    <link rel="stylesheet" href="../../app.css" />
-    <link rel="stylesheet" href="../../styles/flex.css" />
-    <script src="../../utils/rem.js"></script>
-    <script src="../../utils/index.js"></script>
-  </head>
-  <body>
-    <div class="orderDetail">
-      <!-- 订单介绍 -->
-      <div class="product oneLineStart">
-        <div class="mainImg">
-          <img
-            class="coverImg"
-            src="../../assets/test/s-commodity.png"
-            alt=""
-          />
-        </div>
-        <div class="content columnBetweenStart">
-          <div class="name">ALLER-5益生菌（儿童型）</div>
-          <div class="priceBox">
-            <i class="priceIcon">
-              ￥
-            </i>
-            208.00
-          </div>
-          <div class="num">×1</div>
-        </div>
-      </div>
 
-      <div class="editBox">
-        <div class="row">
-          <div class="leftTitle">
-            收货人
-          </div>
-          <input type="text" class="rightVal" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>订单详情</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/8.0.1/normalize.css " />
+  <link rel="stylesheet" href="../../styles/reset.css" />
+  <link rel="stylesheet" href="../../css/orderDetail.css" />
+  <link rel="stylesheet" href="../../app.css" />
+  <link rel="stylesheet" href="../../styles/flex.css" />
+  <script src="../../utils/rem.js"></script>
+  <script src="../../utils/index.js"></script>
+</head>
+
+<body>
+  <div class="orderDetail">
+    <!-- 订单介绍 -->
+    <div class="product oneLineStart">
+      <div class="mainImg">
+        <img class="coverImg" src="../../assets/test/s-commodity.png" alt="" />
+      </div>
+      <div class="content columnBetweenStart">
+        <div class="name">ALLER-5益生菌（儿童型）</div>
+        <div class="priceBox">
+          <i class="priceIcon">
+            ￥
+          </i>
+          208.00
         </div>
-        <div class="row">
-          <div class="leftTitle">
-            收货人
-          </div>
-          <input type="text" class="rightVal" />
+        <div class="num">×1</div>
+      </div>
+    </div>
+
+    <div class="editBox">
+      <div class="row">
+        <div class="leftTitle">
+          收货人
         </div>
-        <div class="row">
-          <div class="leftTitle">
-            收货地址
-          </div>
-          <input type="text" class="rightVal" />
+        <input type="text" class="rightVal" />
+      </div>
+      <div class="row">
+        <div class="leftTitle">
+          收货人
         </div>
-        <div class="row">
-          <div class="leftTitle">
-            备注
-          </div>
-          <input
-            type="text"
-            class="rightVal"
-            placeholder="如果开票请填写邮箱"
-          />
+        <input type="text" class="rightVal" />
+      </div>
+      <div class="row">
+        <div class="leftTitle">
+          收货地址
+        </div>
+        <input type="text" class="rightVal" />
+      </div>
+      <div class="row">
+        <div class="leftTitle">
+          备注
+        </div>
+        <input type="text" class="rightVal" placeholder="添加订单备注" />
+      </div>
+    </div>
+    <!-- 是否开发票 -->
+    <div class="invoice">
+      <div class="isOpen oneLineBetween">
+        <div class="name">是否需要开具发票?</div>
+        <div class="selectBox">
+          <label class="oneLineBetween"> <span>否</span><input type="radio" name="isinvoice" value="0"
+              checked="" /></label>
+          <label class="oneLineBetween"><span>是</span><input type="radio" name="isinvoice" value="1" /></label>
         </div>
       </div>
-      <!-- 积分，优惠券 -->
-      <div class="optional columnBetween x-normal">
-        <div class="row oneLineBetween">
-          <div class="title">当前可用56积分抵现</div>
-          <div class="scoreContorl oneLineEnd">
-            <div class="text">
-              -￥20.00
-            </div>
-            <div class="checkState inline-block">
-              <img
-                class="coverImg"
-                src="../../assets/icon/checked.png"
-                alt=""
-              />
-            </div>
+      <div id="invoicebox" style="display:none;">
+        <div class="row">
+          <div class="name">开具项目</div>
+          <div class="normal">食品</div>
+        </div>
+        <div class="row">
+          <div class="name">发票类型</div>
+          <div class="selectBox typeSelect">
+            <label class="oneLineBetween"> <span>个人</span><input type="radio" name="iscomp" value="0"
+                checked="" /></label>
+            <label class="oneLineBetween"><span>企业</span><input type="radio" name="iscomp" value="1" /></label>
           </div>
         </div>
-        <div class="row oneLineBetween">
-          <div class="title">优惠券</div>
-          <div class="selectCoupon">选择优惠券</div>
+        <div class="row">
+          <div class="name">发票抬头</div>
+          <input name="email" placeholder="请填写发票抬头" />
         </div>
+        <div class="row naShui" style="display:none">
+          <div class="name">纳税人识别号</div>
+          <input name="email" placeholder="请填写纳税人识别号" />
+        </div>
+        <div class="row">
+          <div class="name">电子邮箱</div>
+          <input name="email" placeholder="请填写电子邮箱,用于接收电子发票" />
+        </div>
+
+
       </div>
-      <div class="mask" style="display:none"></div>
-      <div class="coupon" style="display:none">
-        <div class="title ">
-          优惠券
-          <img class="close" src="../../assets/icon/close.png" alt="" />
-        </div>
-        <div class="selectText">立即选择优惠券</div>
-        <div class="scrollBox">
-          <!-- 单个优惠券 start -->
-          <div class="item oneLineBetween">
-            <div class="priceBox flex">
-              <div class="priceIcon">￥</div>
-              <div class="num">3</div>
-            </div>
-            <div class="introduce columnBetweenStart">
-              <div class="up">
-                <div class="money inline">￥3</div>
-                购物优惠券
-              </div>
-              <div class="down">有效期：2018-12-18 至 2018-12-30</div>
-            </div>
-            <div class="checkBox">
-              <img
-                class="coverImg"
-                src="../../assets/icon/checked_orange.png"
-                alt=""
-              />
-            </div>
+    </div>
+    <!-- 积分，优惠券 -->
+    <div class="optional columnBetween x-normal">
+      <div class="row oneLineBetween">
+        <div class="title">当前可用56积分抵现</div>
+        <div class="scoreContorl oneLineEnd">
+          <div class="text">
+            -￥20.00
           </div>
-          <!-- 单个优惠券 end -->
-          <div class="item oneLineBetween">
-            <div class="priceBox flex">
-              <div class="priceIcon">￥</div>
-              <div class="num">3</div>
-            </div>
-            <div class="introduce columnBetweenStart">
-              <div class="up">
-                <div class="money inline">￥3</div>
-                购物优惠券
-              </div>
-              <div class="down">有效期：2018-12-18 至 2018-12-30</div>
-            </div>
-            <div class="checkBox">
-              <img
-                class="coverImg"
-                src="../../assets/icon/checked_orange.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="item oneLineBetween">
-            <div class="priceBox flex">
-              <div class="priceIcon">￥</div>
-              <div class="num">3</div>
-            </div>
-            <div class="introduce columnBetweenStart">
-              <div class="up">
-                <div class="money inline">￥3</div>
-                购物优惠券
-              </div>
-              <div class="down">有效期：2018-12-18 至 2018-12-30</div>
-            </div>
-            <div class="checkBox">
-              <img
-                class="coverImg"
-                src="../../assets/icon/checked_orange.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="item oneLineBetween">
-            <div class="priceBox flex">
-              <div class="priceIcon">￥</div>
-              <div class="num">3</div>
-            </div>
-            <div class="introduce columnBetweenStart">
-              <div class="up">
-                <div class="money inline">￥3</div>
-                购物优惠券
-              </div>
-              <div class="down">有效期：2018-12-18 至 2018-12-30</div>
-            </div>
-            <div class="checkBox">
-              <img
-                class="coverImg"
-                src="../../assets/icon/checked_orange.png"
-                alt=""
-              />
-            </div>
+          <div class="checkState inline-block">
+            <img class="coverImg" src="../../assets/icon/checked.png" alt="" />
           </div>
         </div>
       </div>
-      <div class="fixedPrice oneLineBetween">
-        <div class="leftBox oneLineStart">
-          <div class="name">总计</div>
-          <div class="price">
-            <i class="priceIcon">
-              ￥
-            </i>
-            208.00
+      <div class="row oneLineBetween">
+        <div class="title">优惠券</div>
+        <div class="selectCoupon">选择优惠券</div>
+      </div>
+    </div>
+    <div class="mask" style="display:none"></div>
+    <div class="coupon" style="display:none">
+      <div class="title ">
+        优惠券
+        <img class="close" src="../../assets/icon/close.png" alt="" />
+      </div>
+      <div class="selectText">立即选择优惠券</div>
+      <div class="scrollBox">
+        <!-- 单个优惠券 start -->
+        <div class="item oneLineBetween">
+          <div class="priceBox flex">
+            <div class="priceIcon">￥</div>
+            <div class="num">3</div>
+          </div>
+          <div class="introduce columnBetweenStart">
+            <div class="up">
+              <div class="money inline">￥3</div>
+              购物优惠券
+            </div>
+            <div class="down">有效期：2018-12-18 至 2018-12-30</div>
+          </div>
+          <div class="checkBox">
+            <img class="coverImg" src="../../assets/icon/checked_orange.png" alt="" />
           </div>
         </div>
-        <div
-          class="rightBtn"
-          onclick="openUrl('../orderDetail_deeper/orderDetail_deeper.html')"
-        >
-          立即下单
+        <!-- 单个优惠券 end -->
+        <div class="item oneLineBetween">
+          <div class="priceBox flex">
+            <div class="priceIcon">￥</div>
+            <div class="num">3</div>
+          </div>
+          <div class="introduce columnBetweenStart">
+            <div class="up">
+              <div class="money inline">￥3</div>
+              购物优惠券
+            </div>
+            <div class="down">有效期：2018-12-18 至 2018-12-30</div>
+          </div>
+          <div class="checkBox">
+            <img class="coverImg" src="../../assets/icon/checked_orange.png" alt="" />
+          </div>
+        </div>
+        <div class="item oneLineBetween">
+          <div class="priceBox flex">
+            <div class="priceIcon">￥</div>
+            <div class="num">3</div>
+          </div>
+          <div class="introduce columnBetweenStart">
+            <div class="up">
+              <div class="money inline">￥3</div>
+              购物优惠券
+            </div>
+            <div class="down">有效期：2018-12-18 至 2018-12-30</div>
+          </div>
+          <div class="checkBox">
+            <img class="coverImg" src="../../assets/icon/checked_orange.png" alt="" />
+          </div>
+        </div>
+        <div class="item oneLineBetween">
+          <div class="priceBox flex">
+            <div class="priceIcon">￥</div>
+            <div class="num">3</div>
+          </div>
+          <div class="introduce columnBetweenStart">
+            <div class="up">
+              <div class="money inline">￥3</div>
+              购物优惠券
+            </div>
+            <div class="down">有效期：2018-12-18 至 2018-12-30</div>
+          </div>
+          <div class="checkBox">
+            <img class="coverImg" src="../../assets/icon/checked_orange.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
-  </body>
-  <script>
-    // 优惠券
-    on($(".selectCoupon"), "click", function() {
-      $(".coupon").style.display = "block";
-      $(".mask").style.display = "block";
-    });
-    on($(".close"), "click", function() {
-      $(".coupon").style.display = "none";
-      $(".mask").style.display = "none";
-    });
+    <div class="fixedPrice oneLineBetween">
+      <div class="leftBox oneLineStart">
+        <div class="name">总计</div>
+        <div class="price">
+          <i class="priceIcon">
+            ￥
+          </i>
+          208.00
+        </div>
+        <div class="jianPriceBox">已减100元</div>
+      </div>
+      <div class="rightBtn" onclick="openUrl('../orderDetail_deeper/orderDetail_deeper.html')">
+        立即下单
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  // 优惠券
+  on($(".selectCoupon"), "click", function () {
+    $(".coupon").style.display = "block";
+    $(".mask").style.display = "block";
+  });
+  on($(".close"), "click", function () {
+    $(".coupon").style.display = "none";
+    $(".mask").style.display = "none";
+  });
 
-    // 使用积分？
-    on($(".checkState"), "click", function() {
-      var nowState = $(".checkState img").style.display;
-      if (nowState != "none") {
-        $(".checkState").classList.add("noCheck");
+  // 使用积分？
+  on($(".checkState"), "click", function () {
+    var nowState = $(".checkState img").style.display;
+    if (nowState != "none") {
+      $(".checkState").classList.add("noCheck");
+    } else {
+      $(".checkState").classList.remove("noCheck");
+    }
+    $(".checkState img").style.display =
+      nowState == "none" ? "block" : "none";
+  });
+
+  // 是否需要开具发票?
+  var radioArr = $$("input[name='isinvoice']");
+  for (var i = 0; i < radioArr.length; i++) {
+    var radio = radioArr[i];
+    on(radio, 'click', function (e) {
+      var dom = e.target;
+      if (dom.checked && dom.value === '1') {
+        $('#invoicebox').style.display = 'block'
       } else {
-        $(".checkState").classList.remove("noCheck");
+        $('#invoicebox').style.display = 'none'
       }
-      $(".checkState img").style.display =
-        nowState == "none" ? "block" : "none";
-    });
-  </script>
+    })
+  }
+  // 纳税识别号
+  var naShuiArr = $$("input[name='iscomp']");
+  for (var i = 0; i < naShuiArr.length; i++) {
+    var radio = naShuiArr[i];
+    on(radio, 'click', function (e) {
+      var dom = e.target;
+      if (dom.checked && dom.value === '1') {
+        $('.naShui').style.display = 'flex'
+      } else {
+        $('.naShui').style.display = 'none'
+      }
+    })
+  }
+</script>
+
 </html>
